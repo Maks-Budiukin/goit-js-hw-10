@@ -7,7 +7,7 @@ export function fetchCountries(name) {
     fetch(`https://restcountries.com/v3.1/name/${name}?fields=name,capital,population,flags,languages`)
         .then(response => response.json())
         .then(data => {
-            countries = data;
+            let countries = data;
 
             for (let { name: {official: countryName}, capital, population, flags: {svg: flag}, languages } of countries) {
                     if (countries.length > 1 && countries.length < 11) {

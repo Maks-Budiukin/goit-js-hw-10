@@ -38,7 +38,7 @@ export function fetchCountries(name) {
         .catch((error) => {
             
                 Notify.failure('Oops, there is no country with that name');
-            console.log(error);
+            
     })
 }
 

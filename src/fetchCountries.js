@@ -35,7 +35,7 @@ export function fetchCountries(name) {
             }
             // countries.map(country => listEl.insertAdjacentHTML('beforeend', `<img src="${country.flags.svg}", width="250"></img>`))
         })
-        .catch(() => {
+        .catch((error) => {
             
                 Notify.failure('Oops, there is no country with that name');
             console.log(error);
